@@ -1,6 +1,6 @@
-﻿namespace FactorialService.Tests;
+﻿using FactorialLibrary;
 
-using FactorialLibrary;
+namespace FactorialLibrary.Tests;
 
 public class FactorialServiceTests
 {
@@ -8,6 +8,7 @@ public class FactorialServiceTests
     public void Test1()
     {
         var result = FactorialService.Factorial(0);
+
         Assert.Equal(1, result);
     }
 }
